@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOBOTEK</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Asegúrate de tener Font Awesome en tu página -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+<body class="bg-gray-100 font-sans">
+
+<!-- NAV -->
+<!-- NAVBAR MEJORADO -->
+<nav class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+    
+    <!-- LOGO -->
+   
+     
+
+
+  
+    <a href="index.html" class="flex items-center">
+  <img src="imagen/lobo.png" alt="Logo" class="h-10 w-auto mr-2">
+  <span class="text-xl font-bold hidden sm:inline">
+    <span class="text-gray-600">LOBO</span><span class="text-blue-700">TEK</span>
+  </span>
+</a>
+    <!-- MENÚ DESKTOP -->
+    <div class="space-x-2 hidden md:flex">
+      <a href="#nosotros" class="px-3 py-2 rounded-lg font-medium text-gray-700 hover:bg-gray-600 hover:text-white transition duration-300">Nosotros</a>
+      <a href="#licencias" class="px-3 py-2 rounded-lg font-medium text-gray-700 hover:bg-gray-600 hover:text-white transition duration-300">Licencias</a>
+      <a href="#programas" class="px-3 py-2 rounded-lg font-medium text-gray-700 hover:bg-gray-600 hover:text-white transition duration-300">Productos</a>
+      <a href="#servicio" class="px-3 py-2 rounded-lg font-medium text-gray-700 hover:bg-gray-600 hover:text-white transition duration-300">Servicio Técnico</a>
+      
+      <a href="#contacto" class="px-3 py-2 rounded-lg font-medium text-gray-700 hover:bg-gray-600 hover:text-white transition duration-300">Contacto</a>
+    </div>
+
+    <!-- BOTÓN MENÚ MÓVIL -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="text-2xl text-gray-700 focus:outline-none">☰</button>
+    </div>
+  </div>
+
+  <!-- MENÚ MÓVIL -->
+  <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden">
+      <a href="#nosotros" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-600 hover:text-white transition duration-300">Nosotros</a>
+    <a href="#licencias" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-600 hover:text-white transition duration-300">Licencias</a>
+    <a href="#programas" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-600 hover:text-white transition duration-300">Programas</a>
+    <a href="#servicio" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-600 hover:text-white transition duration-300">Servicio Técnico</a>
+  
+    <a href="#contacto" class="block py-2 px-3 rounded-md text-gray-700 hover:bg-blue-600 hover:text-white transition duration-300">Contacto</a>
+  </div>
+</nav>
+
+<!-- HERO SLIDER -->
+<section class="relative mt-[64px] overflow-hidden">
+  <div class="relative w-full h-[500px]">
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-100 bg-cover bg-center slider-image" style="background-image: url('imagen/antivirus.jpg');"></div>
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center slider-image" style="background-image: url('imagen/officep.jpg');"></div>
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center slider-image" style="background-image: url('imagen/corel.jpg');"></div>
+        <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center slider-image" style="background-image: url('imagen/servicio.jpg');"></div>
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center slider-image" style="background-image: url('imagen/autocad.jpg');"></div>
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center slider-image" style="background-image: url('imagen/windows.jpg');"></div>
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 bg-cover bg-center slider-image" style="background-image: url('imagen/productos.jpg');"></div>
+
+
+
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="text-white text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Lo mejor en tecnología</h1>
+        <p class="text-lg md:text-xl">Licencias, accesorios, y servicio técnico profesional</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- NOSOTROS -->
+<section id="nosotros" class="bg-gray-50 py-20 px-4">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">Nosotros</h2>
+    <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+      En <strong>LOBOTEK</strong>, nos apasiona la tecnología y el servicio de calidad. Somos una tienda virtual especializada en la venta de licencias originales de software, programas especializados, accesorios y servicio técnico confiable. Nos esforzamos por brindar soluciones tecnológicas accesibles y eficaces para usuarios y empresas que buscan mejorar su productividad y seguridad digital.
+    </p>
+  </div>
+</section>
+
+<!-- LICENCIAS -->
+<section id="licencias" class="max-w-6xl mx-auto py-20 px-4">
+  <h2 class="text-3xl font-bold mb-10 text-center">Licencias de Programas</h2>
+   <div id="productos-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Producto 1 -->
+     <!-- Producto 1 -->
+<div class="bg-white shadow-lg rounded-xl overflow-hidden">
+  <img src="IMG LICENCIAS/OFFICE2024.jpg" alt="Photoshop" class="w-full">
+  <div class="p-4">
+    <h3 class="text-xl font-semibold">Office Professional Plus 2024</h3>
+    <p class="text-gray-600">Última versión profesional para oficina.</p>
+    <span class="text-blue-600 font-bold text-lg">S/ 69.90</span>
+    <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+  </div>
+</div>
+
+
+      <!-- Producto 2 -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+        <img src="IMG LICENCIAS/VISIO2021.jpg" alt="AutoCAD" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Visio Profesional</h3>
+          <p class="text-gray-600">Crea diagramas y planos fácilmente.</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 59.90</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+        <img src="IMG LICENCIAS/PROJECT2021.jpg" alt="CorelDRAW" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Project Professional</h3>
+          <p class="text-gray-600">Administra proyectos de forma eficiente.</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 59.90</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+      <!-- Producto 4 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG LICENCIAS/OFFICE365.jpg" alt="Illustrator" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Office 365</h3>
+          <p class="text-gray-600">Edición actualizada con funciones online.</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 49.90</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+      <!-- Producto 5 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG LICENCIAS/OFFICE2021.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Microsoft Office 2021</h3>
+          <p class="text-gray-600">Completa y vitalicia, ideal para hogar y empresa.</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 59.90</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+      <!-- Producto 6 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG LICENCIAS/SMARTSECURITY.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Eset Smart Security</h3>
+          <p class="text-gray-600">Seguridad total, navegación protegida.</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 89.90 </span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+<!-- Producto 7 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG LICENCIAS/SECURITY.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Eset Internet Security</h3>
+          <p class="text-gray-600">Protección avanzada contra amenazas.</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 49.90</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+      <!-- Producto 8 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG LICENCIAS/NOD32.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Eset Nod 32</h3>
+          <p class="text-gray-600">Antimalware ligero y potente.</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 39.90</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+      <!-- Producto 9 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG LICENCIAS/AUTODESK.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Autodesk </h3>
+          <p class="text-gray-600">Diseño 3D y modelado de alta precisión.</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 89.90</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+
+      <!-- Producto 10 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG LICENCIAS/CIVIL 3D.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">CIVIL 3D</h3>
+          <p class="text-gray-600">Ingeniería civil con herramientas topográficas.</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 59.90</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+      <!-- Producto 11 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG LICENCIAS/REVIT.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Revit</h3>
+          <p class="text-gray-600">Modelado de información para arquitectura BIM.</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 59.90</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+ <!-- Producto 12 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG LICENCIAS/3DSMAX.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">3DS MAX</h3>
+          <p class="text-gray-600">Animación y diseño en 3D profesional.</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 59.90</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+      <!-- Producto 13 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG LICENCIAS/ADOBE.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Adobre Creative Cloud</h3>
+          <p class="text-gray-600">Suite completa para creativos.</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 230.00</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+ <!-- Producto 14 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG LICENCIAS/CORELDRAW.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">CorelDRAW</h3>
+          <p class="text-gray-600">Diseño gráfico vectorial rápido y profesional.</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 199.00</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+      <!-- Producto 15 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG LICENCIAS/CANVA.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Canva Pro</h3>
+          <p class="text-gray-600">Suite completa activada de por vida</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 60.00</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+ <!-- Producto 16 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG LICENCIAS/WIN11.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">windows 10/11 Pro</h3>
+          <p class="text-gray-600">Suite completa activada de por vida</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 59.90</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+      <!-- Producto 17 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG LICENCIAS/WIN11HOME.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Windows 10/11 Home</h3>
+          <p class="text-gray-600">Suite completa activada de por vida</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 59.90</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+ <!-- Producto 18 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG LICENCIAS/SERVER.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Win Server Datacenter</h3>
+          <p class="text-gray-600">Suite completa activada de por vida</p>
+          <span class="text-blue-600 font-bold text-lg">S/ 149.90</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+      <!-- Producto 19 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG LICENCIAS/KASPERSKY.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">KASPERSKY Int Security</h3>
+          <p class="text-gray-600"></p>
+          <span class="text-blue-600 font-bold text-lg">S/ 59.90</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+   <!-- Botón VER TODOS / VER MENOS -->
+    <div class="mt-10 text-center">
+      <button onclick="toggleProductos()" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300" id="toggle-btn">
+        Ver todos
+      </button>
+    </div>
+  </div>
+</section>
+
+</section>
+
+
+<!-- PRODUCTOS DISPONIBLES -->
+
+<section id="programas" class="bg-gray-50 py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-10 text-center">Productos Disponibles</h2>
+
+    <!-- Contenedor de productos -->
+    <div id="productos-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+     <!-- Producto 1 -->
+<div class="bg-white shadow-lg rounded-xl overflow-hidden">
+        <img src="IMG PRODUCTO/DISCOS.jpg" alt="AutoCAD" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">DISCOS SOLIDOS</h3>
+          <p class="text-gray-600">Aumenta la velocidad de tu laptop o PC al máximo</p>
+          <span class="text-blue-600 font-bold text-lg">S/ Consultar Precio</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      
+
+<div class="bg-white shadow-lg rounded-xl overflow-hidden">
+  <img src="IMG PRODUCTO/CAMARA.jpg" alt="Photoshop" class="w-full">
+  <div class="p-4">
+    <h3 class="text-xl font-semibold">Camara Web</h3>
+    <p class="text-gray-600">Calidad HD para clases virtuales, Zoom, Google Meet</p>
+    <span class="text-blue-600 font-bold text-lg">S/ Consultar Precio</span>
+    <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+  </div>
+</div>
+      <!-- Producto 3 -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+        <img src="IMG PRODUCTO/RAM.jpg" alt="CorelDRAW" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Memoria RAM para Laptop</h3>
+          <p class="text-gray-600">Acelera tu laptop para multitareas, clases y trabajo</p>
+          <span class="text-blue-600 font-bold text-lg">S/ Consultar Precio</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+      <!-- Producto 4 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG PRODUCTO/USB.jpg" alt="Illustrator" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">MEMORIAS USB y SD</h3>
+          <p class="text-gray-600">Almacena tus archivos, fotos y documentos con rapidez</p>
+          <span class="text-blue-600 font-bold text-lg">S/ Consultar Precio</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+      <!-- Producto 5 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG PRODUCTO/ADAPTADOR.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Convertidores y Adaptadores</h3>
+          <p class="text-gray-600">Conecta HDMI, VGA, USB, RJ45 y más</p>
+          <span class="text-blue-600 font-bold text-lg">S/ Consultar Precio</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+      <!-- Producto 6 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG PRODUCTO/CADDY.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Caddy Sata Slim</h3>
+          <p class="text-gray-600">Agrega un segundo disco a tu laptop</p>
+          <span class="text-blue-600 font-bold text-lg">S/ Consultar Precio</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+      <!-- Producto 7 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG PRODUCTO/MOUSE.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Mouse con cables y Mouse inalámbricos </h3>
+          <p class="text-gray-600">Precisión y comodidad para todo uso</p>
+          <span class="text-blue-600 font-bold text-lg">S/ Consultar Precio</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+      <!-- Producto 8 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG PRODUCTO/TINTAS.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold"> Tintas de Impresoras EPSON </h3>
+          <p class="text-gray-600">Tintas originales compatibles con sistema EcoTank</p>
+          <span class="text-blue-600 font-bold text-lg">S/ Consultar Precio</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+
+      <!-- Producto 9 (oculto al inicio) -->
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hidden extra-producto">
+        <img src="IMG PRODUCTO/CASE.jpg" alt="Office" class="w-full">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Case Disco Duro Externo Sata</h3>
+          <p class="text-gray-600">Convierte tu disco interno en externo fácilmente</p>
+          <span class="text-blue-600 font-bold text-lg">S/ Consultar Precio</span>
+          <a href="https://wa.me/51997121161?text=Hola%2C%20deseo%20comprar%20Adobe%20Photoshop%20CC" target="_blank" class="block bg-gray-500 hover:bg-green-600 text-white px-4 py-2 mt-4 rounded-md text-center font-semibold transition duration-300">
+      Comprar
+    </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón VER TODOS / VER MENOS -->
+    <div class="mt-10 text-center">
+      <button onclick="toggleProductos()" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300" id="toggle-btn">
+        Ver todos
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- SERVICIO TECNICO -->
+
+<section id="servicio" class="py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-10 text-center">Servicio Técnico</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <!-- Servicio 1 -->
+      <div class="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center">
+        <h3 class="text-xl font-semibold mb-2 text-center">Formateo e instalación</h3>
+        <p class="text-gray-600 mb-4 text-center">Reinstalación completa de sistema operativo con drivers y programas básicos.</p>
+        <video controls class="w-full h-78 border-4 border-gray-300 rounded-lg object-contain bg-black">
+          <source src="video/FORMATEO (1).mp4" type="video/mp4">
+          Tu navegador no soporta videos HTML5.
+        </video>
+      </div>
+
+      <!-- Servicio 2 -->
+      <div class="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center">
+        <h3 class="text-xl font-semibold mb-2 text-center">Mantenimiento preventivo</h3>
+        <p class="text-gray-600 mb-4 text-center">Limpieza interna, cambio de pasta térmica y revisión general.</p>
+        <video controls class="w-full h-78 border-4 border-gray-300 rounded-lg object-contain bg-black">
+          <source src="video/mantenimientos.mp4" type="video/mp4">
+          Tu navegador no soporta videos HTML5.
+        </video>
+      </div>
+
+      <!-- Servicio 3 -->
+      <div class="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center">
+        <h3 class="text-xl font-semibold mb-2 text-center">Repotenciación</h3>
+        <p class="text-gray-600 mb-4 text-center">Mejoramos el rendimiento de tu equipo con upgrade de SSD, RAM y más.</p>
+        <video controls class="w-full h-78 border-4 border-gray-300 rounded-lg object-contain bg-black">
+          <source src="video/REPOTENCIACION.mp4" type="video/mp4">
+          Tu navegador no soporta videos HTML5.
+        </video>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="bg-white py-20 px-4">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center">Contáctanos</h2>
+    <form class="grid grid-cols-1 gap-6">
+      <input type="text" placeholder="Nombre" class="p-3 border border-gray-300 rounded-md" required>
+      <input type="email" placeholder="Correo electrónico" class="p-3 border border-gray-300 rounded-md" required>
+      <textarea placeholder="Tu mensaje" rows="5" class="p-3 border border-gray-300 rounded-md" required></textarea>
+      <button type="submit" class="bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700">Enviar Mensaje</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="bg-gray-800 text-white py-8">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <p class="mb-4">© 2025 TEKLOBO. Todos los derechos reservados.</p>
+    <div class="flex justify-center space-x-6 text-lg">
+      <a href="https://wa.me/51997121161" target="_blank" class="hover:text-green-400 flex items-center space-x-2">
+        <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61576872131786" target="_blank" class="hover:text-blue-400 flex items-center space-x-2">
+        <i class="fab fa-facebook"></i><span>Facebook</span>
+      </a>
+      <a href="mailto:tek.lobo@gmail.com" class="hover:text-red-400 flex items-center space-x-2">
+        <i class="fas fa-envelope"></i><span>Correo</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- BOTÓN WHATSAPP FLOTANTE
+<a href="https://wa.me/51997121161" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg hover:bg-green-600 transition">
+  WhatsApp
+</a>
+ -->
+<!-- BOTÓN WHATSAPP FLOTANTE SOLO CON ÍCONO -->
+<a href="https://wa.me/51997121161" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition">
+  <i class="fab fa-whatsapp text-4xl"></i>
+</a>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
